@@ -1,0 +1,27 @@
+15 Fetching Data With JavaScript
+Errores del async
+    falta la cabecera CORS 'Access-Control-Allow-Origin').
+    NetworkError when attempting to fetch resource.
+
+Cuando usamos API's libres es probable que no esten configuradas para enviar las cabeceras CORS
+las cuales permiten que podamos trabajar con la API.
+
+Una solucion al error es llamar a un Proxy y despues hacer la peticion a la API.
+
+El proxy que se llamo fue este:
+    https://cors-anywhere.herokuapp.com/
+Para solucionar el error de CORS
+
+Existe otra solucion y es crear nuestro propio Proxy.
+Los pasos que tenemos que seguri es iniciar sesion en Heroku, descargar e instalar Heroku CLI, y la aplicacion sera
+creada con node.js.
+
+Basicamente lo que hacemos es registrarnos en heroku, despues descargar heroku cli, loggiarnos ahi, y despues 
+clonamos este proyecto en github.
+ https://github.com/Rob--W/cors-anywhere.git
+
+Es por ello que se nos crea la carpeta cors-anywhere
+despues de clonarla hacemos un cd hacia esa carpeta e instalamos los modulos de node con npm install
+
+Despues de instalar los modulos, creamos un proyecto de heroku co  heroku create
+y finalmente hacemos un git push heroku master.
